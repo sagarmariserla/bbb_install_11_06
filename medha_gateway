@@ -1,0 +1,23 @@
+/medha_gateway/frmwrk.log{
+        su root root
+        rotate 4
+        copytruncate
+        compress
+        compresscmd /bin/gzip
+        missingok
+        notifempty
+        create 644 root root
+        size 5M
+}
+
+/medha_gateway/Confio_App.log{
+        su root root
+        rotate 4
+        copytruncate
+        compress
+        compresscmd /bin/gzip
+        missingok
+        notifempty
+        create 644 root root
+        size 5M
+}
