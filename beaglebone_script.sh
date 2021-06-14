@@ -84,6 +84,7 @@ echo "**************************************************************************
 #sudo chmod o+w /etc/crontab
 #sudo echo "*/30 * * * * root sudo service zwave_app restart" >> /etc/crontab
 #sudo chmod o-w /etc/crontab
+sudo logrotate /etc/logrotate.d/medha_gateway
 sudo rm -rf /home/debian/*
 sleep 3s
 sudo reboot
